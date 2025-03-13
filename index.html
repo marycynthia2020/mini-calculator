@@ -6,46 +6,64 @@
     <link rel="stylesheet" href="/dist/style.css" />
     <title>Calculator</title>
   </head>
-  <body class="w-screen h-screen md:grid md:place-items-center md:bg-red-300">
+  <body class="w-screen h-screen md:grid md:place-items-center">
     <div
       class="w-[100%] h-full p-4 pt-8 md:w-2/5 md:h-1/2 bg-white rounded-md shadow-2xl"
     >
-      <h1 class=" text-3xl md:text-4xl text-center mb-8">Simple Calculator</h1>
-      <form action="">
-        <div class="grid md:grid-cols-2 gap-10 md:gap-6 mb-10 ">
-          <div class="flex flex-col gap-2">
-            <label for="number" class="text-xl pl-2"
-              ><span class="text-red-500 mr-1">*</span>First Number</label
-            >
-            <input
-              type="number"
-              name=""
-              id="number"
-              placeholder="enter a number"
-              class="p-4 h-[50px] border-2 border-gray-400 rounded-md w-full"
-            />
-          </div>
+      <h1 class="text-3xl md:text-4xl text-center mb-10">Simple Calculator</h1>
 
-          <div class="flex flex-col gap-2">
-            <label for="number" class="text-xl pl-2"
-              ><span class="text-red-500 mr-1">*</span>Second Number</label
-            >
-            <input
-              type="number"
-              name=""
-              id="number"
-              placeholder="enter a number"
-              class="p-4 h-[50px] border-2 border-gray-400 rounded-md w-full"
-            />
-          </div>
+      <div class="grid md:grid-cols-2 gap-10 md:gap-6 mb-10">
+        <div class="flex flex-col gap-2">
+          <label for="number" class="text-xl pl-2"
+            ><span class="text-red-500 mr-1">*</span>First Number</label
+          >
+          <input
+            type="number"
+            name=""
+            id="number1"
+            placeholder="enter a number"
+            class="p-4 h-[50px] border-2 border-gray-400 rounded-md w-full hover:border-none"
+          />
         </div>
-        <span class="text-2xl p-2 rounded-md">Result:</span>
-        <div class="grid md:grid-cols-2 mt-10 gap-4">
-          <button class="text-white  text-xl py-4 rounded-md bg-blue-700">Add</button>
-          <button class="text-white  text-xl py-4 rounded-md bg-blue-700">Subtract</button>
-          <button class="text-white  text-xl py-4 rounded-md bg-blue-700">Multiply</button>
-          <button class="text-white  text-xl py-4 rounded-md bg-blue-700">Divide</button>
+
+        <div class="flex flex-col gap-2">
+          <label for="number" class="text-xl pl-2"
+            ><span class="text-red-500 mr-1">*</span>Second Number</label
+          >
+          <input
+            type="number"
+            name=""
+            id="number2"
+            placeholder="enter a number"
+            class="p-4 h-[50px] border-2 border-gray-400 rounded-md w-full"
+          />
         </div>
-      </form>
+      </div>
+      <span class="text-2xl p-2 rounded-md" id="result">Result: </span>
+      <div class="grid md:grid-cols-2 mt-10 gap-4">
+        <button class="text-white text-xl py-4 rounded-md bg-blue-700" id="add">
+          Add
+        </button>
+        <button
+          class="text-white text-xl py-4 rounded-md bg-blue-700"
+          id="subtract"
+        >
+          Subtract
+        </button>
+        <button
+          class="text-white text-xl py-4 rounded-md bg-blue-700"
+          id="multiply"
+        >
+          Multiply
+        </button>
+        <button
+          class="text-white text-xl py-4 rounded-md bg-blue-700"
+          id="divide"
+        >
+          Divide
+        </button>
+      </div>
     </div>
+    <script src="/scripts/index.js"></script>
+  </body>
 </html>
